@@ -1,0 +1,18 @@
+// Button component styles
+.buttonCustom
+  position relative
+  overflow hidden
+  
+  &:after
+    content ''
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background-color rgba(255, 255, 255, 0.1)
+    transform translateX(-100%)
+    transition transform 0.3s ease
+  
+  &:hover:after
+    transform translateX(0)
